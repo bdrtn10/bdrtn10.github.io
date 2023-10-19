@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galeri Gambar</title>
+	<style>
+    body{
+      background-color: rgb(215, 236, 250);
+      height: auto;
+    }
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-gap: 10px;
+			margin: 20px;
+		}
+
+		.gallery img {
+			width: 350;
+			height: 350;
+			object-fit: cover;
+			transition: transform 0.3s ease;
+		}
+		.gallery img:hover {
+			transform: scale(1.1);
+		}
+	</style>
+</head>
+<body>
+	<div class="gallery">
+		<center><img src="baliii.PNG"></center>
+	</div>
+</body>
+</html>
